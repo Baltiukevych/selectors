@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: lightcoral;
+      }
+
+      div {
+        border: 1px dotted blueviolet;
+        min-height: 100px;
+        min-width: 100px;
+        margin: 10px;
+        padding: 5px;
+      }
+
+      .t1 .t1 {
+        background: greenyellow;
+      }
+
+      .outer.t1 {
+        background: violet;
+      }
+      .t2 .inner-1 {
+        background: gold;
+      }
+
+      .outer .inner-1,
+      .outer .inner-2 {
+        background: silver;
+      }
+
+      .inner-1,
+      .inner-2 {
+        background: honeydew;
+      }
+
+      h1 {
+        /* selector po nazwe taga  */
+      }
+
+      .nazwa-klasy {
+        /* selectorpo klasie */
+      }
+
+      input[type="text"] {
+        /* selector po attrybucie */
+      }
+
+      #identifier {
+        /* selector po id */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- inline styles -->
+    <div class="outer t1" style="background: indigo;">
+      <div class="inner-1"></div>
+      <div class="inner-2 t1"></div>
+    </div>
+    <div class="outer t2">
+      <div class="inner-1"></div>
+    </div>
+    <section>
+      <h1>
+        Waga selectorów
+      </h1>
+      <p>od namniej ważnego</p>
+      <ol>
+        <li>nazwa taga</li>
+        <li>po klasie</li>
+        <li>po atrybucie</li>
+        <li>po id</li>
+        <li>inline</li>
+        <li>javascript</li>
+      </ol>
+      <p>Jezeli waga jest taka sama, to wazniesze jest to co napisany</p>
+      <p>Specificity - okreslenie rodzica, braci, klasa z tagiem html itd.</p>
+    </section>
+    <section>
+      <h2>Leyout - układ strony/aplikacji</h2>
+      RWD - responsive web design (projectowanie pod kątem wielu urządzeń,
+      elastycznie)
+    </section>
+    <script>
+      const h1 = document.querySelector("h1");
+      h1.style.background = "peru";
+    </script>
+  </body>
+</html>
